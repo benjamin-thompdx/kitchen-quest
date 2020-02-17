@@ -1,12 +1,12 @@
 # _Kitchen Quest_
 
-#### _An application for discovering recipes based on the ingredients a user has in thier fridge utilizing the spoontacular API. , Feb 2020_
+#### _An application for discovering recipes based on the ingredients a user has utilizing the spoontacular API. and BigOven API, Feb 2020_
 
 #### By _**Team Kitchen Quest**_
 
 ## Description
 
-Users can enter the ingredients they have in their fridge and the application will provide a list of recipes that consist of the inputted ingredients along with a list of additional ingredients they will need to successfully create the suggested recipes. 
+Users can enter the ingredients they have in their fridge and the application will provide a list of recipes that consist of the inputted ingredients, as well as a list of additional ingredients they will need to successfully create the suggested recipes. Users can search recipes to find cooking instructions. Lastly, users can click on fridge graphic for a cooking joke.
 
 ## Preview
 ![Landing Page Preview](img/kitchen-quest-fridge.png)
@@ -15,9 +15,9 @@ Users can enter the ingredients they have in their fridge and the application wi
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-||||
-||||
-||||
+|user inputs the ingredients they have and clicks submit to recieve recipe inspiration|apple, sugar, flour|apple fritter|
+|user inputs recipe name to recieve recipe instructions|apple fritter|Combine flour, sugar, salt, baking powder, cinnamon. Stir in milk and egg until just combined. Fold in apple...|
+|user clicks on fridge graphic to recieve a cooking joke|graphic click|any salad is a ceasar salad if you stab it enough|
 
 ## Setup/Installation Requirements
 
@@ -44,8 +44,9 @@ _Note For Editors:_
 * Once cloned/downloaded, to run and make changes, in the terminal simply run **$ npm install** to download necessary dependencies
 * Run **$ npm run build** to create your dist folder with a bundle.js file
 * Obtain API key from https://spoonacular.com/food-api
+* Obtain API key from https://api2.bigoven.com/
 * Create .env file in the root directory of kitchen-quest
-* Add the API key to .env file (```API_KEY: input your API key here```)
+* Add the API keys to .env file (```API_KEY: input your API key here```)
 * **IMPORTANT** Add .env file to .gitignore file 
 * The API key will now be referenced within the kitchen-service.js file
 * Lastly, run **$ npm run start** to run the application
@@ -68,6 +69,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * Webpack
 * Node.js
 * spoonacular API
+* BigOven API
 
 ### License
 
