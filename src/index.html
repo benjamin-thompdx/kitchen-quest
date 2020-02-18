@@ -12,11 +12,18 @@
       <br>
       <img id="fridge-gif" src="https://media.giphy.com/media/H3ZRi0IBMeXu8Jlag8/giphy.gif" alt="Man in fridge">
       <br>
-      <label for="userInput">Get Inspired:</label>
-      <input id="userInput" type="text" placeholder="apple, chicken, etc.">
-      <br>
-      <button class="btn btn-dark" id="findByIngrdients">Search By Ingredients</button>
-      <div class="gcse-search" id="recipeSearch"></div>
+      <div> <!-- buttons/search bars -->
+        <div class="row"> <!--ingredients search-->
+          <label for="userInput">Get Inspired:</label>
+          <input id="userInput" type="text" placeholder="apple, chicken, etc.">
+          <br>
+          <button class="btn" id="findByIngrdients">Search By Ingredients</button>
+        </div>
+        <div class="row"> <!--recipe search-->
+          <!-- <label for="recipeSearch">Persue Inspiration</label> -->
+          <div class="gcse-search" id="recipeSearch"></div>
+        </div>
+      </div>
       <br>
       <table style="width: 100%" id="ingredientsOutput">
         <tr>
