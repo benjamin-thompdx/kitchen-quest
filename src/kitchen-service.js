@@ -1,7 +1,7 @@
 export class KitchenService {
-  async getDocByName(name) {
+  async getRecipeByIngredient(ingredient) {
     try {
-      let response = await fetch(`https://api.betterdoctor.com/2016-03-01/doctors?name=${name}&location=or-portland&skip=0&limit=100&user_key=${process.env.API_KEY}`);
+      let response = await fetch(` https://api.spoonacular.com/recipes/findByIngredients?ingredients=${userInput}&number=2&apiKey=${process.env.API_KEY}`);
       let jsonifiedResponse;
       if (response.ok && response.status === 200) {
         jsonifiedResponse = await response.json();
