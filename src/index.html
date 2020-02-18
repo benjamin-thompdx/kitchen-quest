@@ -1,10 +1,45 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/json" src="index.html.js"></script>
+    <title>Kitchen Quest</title>
   </head>
   <body>
-   <h1>hello team :}</h1>
-   <h2>Making ch-ch-changes</h2>
+    <div class="container">
+      <h1>Kitchen Quest</h1>
+      <h3>A culinary adventure at your fingertips!</h3>
+      <br>
+      <img id="fridge-gif" src="https://media.giphy.com/media/H3ZRi0IBMeXu8Jlag8/giphy.gif" alt="Man in fridge">
+      <br>
+      <label for="userInput">Get Inspired:</label>
+      <input id="userInput" type="text" placeholder="apple, apple fritter, etc.">
+      <br>
+      <button class="btn btn-dark" id="findByIngrdients">Search By Ingredients</button>
+      <button class="btn btn-dark" id="findByRecipe">Search By Recipe</button>
+      <br>
+      <table style="width: 100%" id="ingredientsOutput">
+        <tr>
+          <th>Recipe</th>
+          <th>Image</th>
+          <th>Ingredients Used</th>
+          <th>Unused Ingredients</th>
+          <th>Additional Ingredients Needed</th>
+        </tr>
+      </table>
+      <br>
+            <br>
+      <table style="width: 100%" id="ingredientsOutput">
+        <tr>
+          <th>Recipe</th>
+          <th>Image</th>
+          <th>Ingredients Used</th>
+          <th>Unused Ingredients</th>
+          <th>Additional Ingredients Needed</th>
+        </tr>
+      </table>
+      <br>
+      <div class="noResult"></div>
+      <div class="errors"></div>
+    </div>
   </body>
 </html>
