@@ -31,7 +31,7 @@ $(document).ready(function () {
             let additionalIngredientsNeededCell = row.insertCell(4);
 
             recipeCell.innerHTML = value.title;
-            imageCell.innerHTML = value.image;
+            imageCell.innerHTML = `<img src=${value.image}></img>`;
             ingredientsUsedCell.innerHTML = value.usedIngredients[0].name;
             unusedIngredientsCell.innerHTML = value.unusedIngredients[0].name;
             additionalIngredientsNeededCell.innerHTML = value.missedIngredients[0].name;
