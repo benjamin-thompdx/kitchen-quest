@@ -1,6 +1,6 @@
 # _Kitchen Quest_
 
-#### _An application for discovering recipes based on the ingredients a user has utilizing the spoontacular API. and BigOven API, Feb 2020_
+#### _An application for discovering recipes based on the ingredients a user has utilizing the spoontacular API., Feb 2020_
 
 #### By _**Team Kitchen Quest**_
 
@@ -44,11 +44,10 @@ _Note For Editors:_
 * Once cloned/downloaded, to run and make changes, in the terminal simply run **$ npm install** to download necessary dependencies
 * Run **$ npm run build** to create your dist folder with a bundle.js file
 * Obtain API key from https://spoonacular.com/food-api
-* Obtain API key from https://api2.bigoven.com/
 * Create .env file in the root directory of kitchen-quest
 * Add the API keys to .env file (```API_KEY: input your API key here```)
 * **IMPORTANT** Add .env file to .gitignore file 
-* The API key will now be referenced within the kitchen-service.js file
+* The API key will now be referenced within the kitchen-service.js file using the following syntax: ```${process.env.API_KEY}```
 * Lastly, run **$ npm run start** to run the application
 
 ## Known Bugs
@@ -69,7 +68,6 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * Webpack
 * Node.js
 * spoonacular API
-* BigOven API
 
 ### License
 
