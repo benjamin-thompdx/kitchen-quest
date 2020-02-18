@@ -45,7 +45,7 @@ _Note For Editors:_
 * Run **$ npm run build** to create your dist folder with a bundle.js file
 * Obtain API key from https://spoonacular.com/food-api
 * Create .env file in the root directory of kitchen-quest
-* Add the API keys to .env file (```API_KEY: input your API key here```)
+* Add the API keys to .env file (```API_KEY = input your API key here```)
 * **IMPORTANT** Add .env file to .gitignore file 
 * The API key will now be referenced within the kitchen-service.js file using the following syntax: ```${process.env.API_KEY}```
 * Lastly, run **$ npm run start** to run the application
