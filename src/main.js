@@ -31,12 +31,16 @@ $(document).ready(function () {
             let additionalIngredientsNeededCell = row.insertCell(4);
 
             recipeCell.innerHTML = value.title;
-            imageCell.innerHTML = value.image;
+            imageCell.innerHTML = `<img src=${value.image}></img>`;
             ingredientsUsedCell.innerHTML = value.usedIngredients[0].name;
             unusedIngredientsCell.innerHTML = value.unusedIngredients[0].name;
             additionalIngredientsNeededCell.innerHTML = value.missedIngredients[0].name;
           });
-        }
+        } else if (response.length === 0) {
+          $(".noResult").text("Sorry, no recipes found with the ingredients that you have");
+        } 
+      } else if (response === false) {
+        $(".errors").text("Sorry, there was an error handling your request!");
       }
     }
   });
