@@ -11,7 +11,7 @@ $(document).ready(function () {
 
   $("#fridgeBtn").click(function () {
     event.preventDefault();
-  
+    
    (async () => {
       let fridgeService = new FridgeService();
       const response = await fridgeService.getFridgeFact();
@@ -32,6 +32,7 @@ $(document).ready(function () {
 
   $("#findByIngrdients").click(function () {
     event.preventDefault();
+    $("#ingredientsOutput").show();
     const ingredient = $("#userInput").val();
     $("#userInput").val("");
 
@@ -40,7 +41,7 @@ $(document).ready(function () {
       const response = await kitchenService.getRecipeByIngredient(ingredient);
       getElements(response);
     })();
-
+    
     function getElements(response) {
       if (response) {
         if (response.length > 0) {
@@ -51,19 +52,25 @@ $(document).ready(function () {
             table.deleteRow(i);
           }
           
+          console.log(response);
           response.forEach(function (value, i) {
             let row = table.insertRow(i + 1);
-            let recipeCell = row.insertCell(0);
-            let imageCell = row.insertCell(1);
+            let imageCell = row.insertCell(0);
+            let recipeCell = row.insertCell(1);
             let ingredientsUsedCell = row.insertCell(2);
             let unusedIngredientsCell = row.insertCell(3);
             let additionalIngredientsNeededCell = row.insertCell(4);
 
-            recipeCell.innerHTML = value.title;
             imageCell.innerHTML = `<img src=${value.image}></img>`;
+            recipeCell.innerHTML = value.title;
             ingredientsUsedCell.innerHTML = value.usedIngredients[0].name;
             unusedIngredientsCell.innerHTML = value.unusedIngredients[0].name;
             additionalIngredientsNeededCell.innerHTML = value.missedIngredients[0].name;
+            // for(let y = 0; y<=response.length; y++){
+            //   table.appendChild(value.missedIngredients[i].name)
+              // additionalIngredientsNeededCell.innerHTML = value.missedIngredients[y].name;
+              // console.log(value.missedIngredients[y].name);
+            // }
           });
         } else if (response.length === 0) {
           $(".noResult").text("Sorry, no recipes found with the ingredients that you have");
