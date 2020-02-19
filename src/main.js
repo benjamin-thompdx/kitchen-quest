@@ -22,6 +22,12 @@ $(document).ready(function () {
       if (response) {
         if (response.length > 0) {
           let table = document.getElementById("ingredientsOutput");
+          $(".noResult").empty();
+          
+          for(var i = table.rows.length - 1; i > 0; i--) {
+            table.deleteRow(i);
+          }
+          
           response.forEach(function (value, i) {
             let row = table.insertRow(i + 1);
             let recipeCell = row.insertCell(0);
