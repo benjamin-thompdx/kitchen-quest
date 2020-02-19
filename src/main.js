@@ -3,8 +3,32 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { KitchenService } from './../src/kitchen-service.js';
+import { FridgeService } from './../src/fridge-service.js';
 
 $(document).ready(function () {
+
+// kalepadot code below
+
+  $("#fridgeBtn").click(function () {
+    event.preventDefault();
+  
+   (async () => {
+      let fridgeService = new FridgeService();
+      const response = await fridgeService.getFridgeFact();
+      console.log(response);
+      getElements(response);
+    })();
+    function getElements(response) {
+      if (response) {
+        console.log(typeof response)
+        $(".fridgeFact").text(`${response.text}`)
+        // $(".fridgeFact").text(`${JSON.stringify(response)}`)
+        // $(".fridgeFact").text(`${response}`)
+      }
+    }
+  });
+// JSON.stringify(response)
+// kalepadot code above
 
   $("#findByIngrdients").click(function () {
     event.preventDefault();
