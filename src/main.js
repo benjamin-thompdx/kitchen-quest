@@ -38,7 +38,6 @@ $(document).ready(function () {
     (async () => {
       let kitchenService = new KitchenService();
       const response = await kitchenService.getRecipeByIngredient(ingredient);
-      console.log(response);
       getElements(response);
     })();
 
@@ -68,6 +67,10 @@ $(document).ready(function () {
           });
         } else if (response.length === 0) {
           $(".noResult").text("Sorry, no recipes found with the ingredients that you have");
+          let table = document.getElementById("ingredientsOutput");
+          for(var index = table.rows.length - 1; index > 0; index--) {
+            table.deleteRow(index);
+          }
         } 
       } else if (response === false) {
         $(".errors").text("Sorry, there was an error handling your request!");
