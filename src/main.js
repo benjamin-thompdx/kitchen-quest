@@ -63,14 +63,15 @@ $(document).ready(function () {
 
             imageCell.innerHTML = `<img src=${value.image}></img>`;
             recipeCell.innerHTML = value.title;
-            ingredientsUsedCell.innerHTML = value.usedIngredients[0].name;
-            unusedIngredientsCell.innerHTML = value.unusedIngredients[0].name;
-            additionalIngredientsNeededCell.innerHTML = value.missedIngredients[0].name;
-            // for(let y = 0; y<=response.length; y++){
-            //   table.appendChild(value.missedIngredients[i].name)
-              // additionalIngredientsNeededCell.innerHTML = value.missedIngredients[y].name;
-              // console.log(value.missedIngredients[y].name);
-            // }
+            for( i = 0; i < value.usedIngredients.length; i++) {
+              ingredientsUsedCell.innerHTML += value.usedIngredients[i].name + ", ";
+            }
+            for( i = 0; i < value.unusedIngredients.length; i++) {
+              unusedIngredientsCell.innerHTML += value.unusedIngredients[i].name + ", ";
+            }
+            for( i = 0; i < value.missedIngredients.length; i++) {
+              additionalIngredientsNeededCell.innerHTML += value.missedIngredients[i].name + ", ";
+            }
           });
         } else if (response.length === 0) {
           $(".noResult").text("Sorry, no recipes found with the ingredients that you have");
