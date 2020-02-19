@@ -1,8 +1,8 @@
 export class FridgeService {
-  async getFridgeFact(trivia) {
+  async getFridgeFact() {
     try {
-      let response = await fetch(`https://api.spoonacular.com/food/trivia/random?query=&apiKey=${process.env.API_KEY}`)
-);
+      let response = await fetch(`https://api.spoonacular.com/food/trivia/random?query=&apiKey=${process.env.API_KEY}`);
+
       
       let jsonifiedResponse;
       if (response.ok && response.status === 200) {

@@ -14,18 +14,20 @@ $(document).ready(function () {
   
    (async () => {
       let fridgeService = new FridgeService();
-      const response = await fridgeService.getFridgeFact(trivia);
+      const response = await fridgeService.getFridgeFact();
       console.log(response);
       getElements(response);
     })();
     function getElements(response) {
       if (response) {
-        console.log(response)
-        $(".fridgeFact").text$(`${response}`)
+        console.log(typeof response)
+        $(".fridgeFact").text(`${response.text}`)
+        // $(".fridgeFact").text(`${JSON.stringify(response)}`)
+        // $(".fridgeFact").text(`${response}`)
       }
     }
   });
-
+// JSON.stringify(response)
 // kalepadot code above
 
   $("#findByIngrdients").click(function () {
