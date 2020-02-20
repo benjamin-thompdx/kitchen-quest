@@ -8,10 +8,14 @@ import { FridgeService } from './../src/fridge-service.js';
 $(document).ready(function () {
 
 // kalepadot code below
-
-  $("#fridgeBtn").click(function () {
+  $(".toggle").click(function () {
+     $("#fridgeClosed").toggle()
+     $("#fridgeOpen").toggle();
+     $(".fridgeFact").empty();
+  });
+  $("#fridgeClosed").click(function () {
     event.preventDefault();
-    
+   
    (async () => {
       let fridgeService = new FridgeService();
       const response = await fridgeService.getFridgeFact();

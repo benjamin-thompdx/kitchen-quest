@@ -57,3 +57,21 @@ td {
 #findByIngrdients {
   background-color: #34D0E7;
 }
+
+#fridgeOpen {
+  display: none;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#fridgeClosed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.toggle {
+  
+}
