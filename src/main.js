@@ -19,12 +19,10 @@ $(document).ready(function () {
    (async () => {
       let fridgeService = new FridgeService();
       const response = await fridgeService.getFridgeFact();
-      console.log(response);
       getElements(response);
     })();
     function getElements(response) {
       if (response) {
-        console.log(typeof response)
         $(".fridgeFact").text(`${response.text}`)
         // $(".fridgeFact").text(`${JSON.stringify(response)}`)
         // $(".fridgeFact").text(`${response}`)
@@ -57,7 +55,6 @@ $(document).ready(function () {
             table.deleteRow(i);
           }
           
-          console.log(response);
           response.forEach(function (value, i) {
             let row = table.insertRow(i + 1);
             let imageCell = row.insertCell(0);
