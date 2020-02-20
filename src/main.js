@@ -28,6 +28,7 @@ $(document).ready(function () {
     }
   });
 // JSON.stringify(response)
+
 // kalepadot code above
 
   $("#findByIngrdients").click(function () {
