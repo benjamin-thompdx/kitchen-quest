@@ -3,6 +3,8 @@ body {
   text-align: center;
   color: rgb(124,77,255);
   font-family: Trebuchet MS, sans-serif;
+  background-image: url(https://art.pixilart.com/a599ce7678003bf.gif);
+  background-size: 50%;
 }
 
 h3 {
@@ -123,3 +125,4 @@ img {
   margin: auto;
   text-align: center;
 }
+
