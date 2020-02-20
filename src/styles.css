@@ -23,9 +23,29 @@ h3 {
   margin: 0 0 10px 0;
 }
 
+h5 {
+  color: rgb(34, 34, 34);
+}
+
 #ingredientsOutput {
   display: none;
 } 
+
+#recipeSearch {
+  border: 5px solid white; 
+  -webkit-box-shadow: 
+    inset 0 0 8px  rgb(48,191,215),
+          0 0 16px rgb(48,191,215); 
+  -moz-box-shadow: 
+    inset 0 0 8px  rgb(48,191,215),
+          0 0 16px rgb(48,191,215); 
+  box-shadow: 
+    inset 0 0 8px  rgb(48,191,215),
+          0 0 16px rgb(48,191,215); 
+  padding: 15px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 10px 0;
+}
 
 tr {
   width: 600px;
@@ -55,5 +75,8 @@ td {
   width: 500px;
 }
 #findByIngrdients {
-  background-color: #34D0E7;
+  background-color: rgb(254,255,1);
+  width: 100px;
+  height: 65px;
+  margin-left: 15px
 }
