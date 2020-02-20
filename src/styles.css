@@ -9,21 +9,10 @@ h3 {
   color: rgb(34, 34, 34);
 }
 #userInput {
-  /* border-radius: 20px; */
   border: 1px solid black; 
-  /* -webkit-box-shadow: 
-    inset 0 0 8px  rgb(48,191,215),
-          0 0 16px rgb(48,191,215); 
-  -moz-box-shadow: 
-    inset 0 0 8px  rgb(48,191,215),
-          0 0 16px rgb(48,191,215); 
-  box-shadow: 
-    inset 0 0 8px  rgb(48,191,215),
-          0 0 16px rgb(48,191,215); 
-  padding: 15px; */
-  /* background: rgba(255,255,255,0.5); */
   margin-top: 10px;
   height: 45px;
+  width: 350px
 }
 
 h5 {
@@ -33,23 +22,6 @@ h5 {
 #ingredientsOutput {
   display: none;
 } 
-
-#recipeSearch {
-  /* border-radius: 20px;
-  border: 5px solid white; 
-  -webkit-box-shadow: 
-    inset 0 0 8px  rgb(48,191,215),
-          0 0 16px rgb(48,191,215); 
-  -moz-box-shadow: 
-    inset 0 0 8px  rgb(48,191,215),
-          0 0 16px rgb(48,191,215); 
-  box-shadow: 
-    inset 0 0 8px  rgb(48,191,215),
-          0 0 16px rgb(48,191,215); 
-  padding: 10px;
-  background: rgba(255,255,255,0.5);
-  margin: 0 0 10px 0; */
-}
 
 tr {
   width: 600px;
@@ -79,38 +51,31 @@ th {
 .noResult {
   color: rgb(34, 34, 34);
 }
+
 .row {
   margin: auto;
   width: 50%;
 }
+
 #recipeSearch {
   width: 500px;
 }
+
 #findByIngrdients {
-  /* border-radius: 20px; */
   background-color: #FFEBED;
   margin-left: 35px;
+  margin-top: 15px;
   height: 30px;
-  width: 75px;
-  /* border: 5px solid white;  */
-  /* -webkit-box-shadow: 
-  inset 0 0 8px  #FFE90B,
-        0 0 16px #FFE90B; 
--moz-box-shadow: 
-  inset 0 0 8px  #FFE90B,
-        0 0 16px #FFE90B; 
-box-shadow: 
-  inset 0 0 8px  #FFE90B,
-        0 0 16px #FFE90B;  */
+  width: 65px;
 }
 
 #fridgeOpen {
   display: none;
-  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
 #fridgeClosed {
   display: block;
   margin-left: auto;
@@ -122,6 +87,7 @@ img {
   border-radius: 20px;
   border: solid gray 2px;
 }
+
 #recipeBorder {
   border-radius: 20px;
   border: 5px solid white; 
@@ -134,11 +100,12 @@ img {
   box-shadow: 
     inset 0 0 8px  #FFE90B,
           0 0 16px #FFE90B; 
-  padding: 15px;
+  padding: 30px;
   background: rgba(255,255,255,0.5);
   margin: auto;
   text-align: center;
 }
+
 #recipeSearchBorder {
   border-radius: 20px;
   border: 5px solid white; 
@@ -156,11 +123,3 @@ img {
   margin: auto;
   text-align: center;
 }
-
-
-  /* background-color: rgb(254,255,1);
-  width: 100px;
-  height: 65px;
-  margin-left: 15px
-
-} */
