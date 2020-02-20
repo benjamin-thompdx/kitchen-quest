@@ -51,13 +51,22 @@ tr {
   width: 600px;
   word-wrap: break-word;
   position: relative;
-  text-align: center;
+  text-align: left;
   height:100%;
   width:100%;
+  padding: 20px;
 }
 
 td {
   color: rgb(34, 34, 34);
+  padding: 20px;
+}
+
+th {
+  padding: 20px;
+  text-align: center;
+  font-style: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .errors {
@@ -91,6 +100,12 @@ td {
   margin-right: auto;
   width: 50%;
 }
+
+img {
+  border-radius: 20px;
+  border: solid gray 2px;
+}
+
 
   /* background-color: rgb(254,255,1);
   width: 100px;
