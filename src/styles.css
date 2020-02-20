@@ -21,6 +21,8 @@ h5 {
 
 #ingredientsOutput {
   display: none;
+  border-radius: 20px;
+  background-color: rgb(255,235,237);
 } 
 
 tr {
