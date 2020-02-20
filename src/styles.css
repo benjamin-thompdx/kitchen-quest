@@ -1,16 +1,17 @@
 body {
   position: relative;
   text-align: center;
-  color: rgb(48,191,215);
+  color: rgb(124,77,255);
+  font-family: Trebuchet MS, sans-serif;
 }
 
 h3 {
   color: rgb(34, 34, 34);
 }
 #userInput {
-  border-radius: 20px;
-  border: 5px solid white; 
-  -webkit-box-shadow: 
+  /* border-radius: 20px; */
+  border: 1px solid black; 
+  /* -webkit-box-shadow: 
     inset 0 0 8px  rgb(48,191,215),
           0 0 16px rgb(48,191,215); 
   -moz-box-shadow: 
@@ -19,9 +20,10 @@ h3 {
   box-shadow: 
     inset 0 0 8px  rgb(48,191,215),
           0 0 16px rgb(48,191,215); 
-  padding: 15px;
-  background: rgba(255,255,255,0.5);
-  margin: 0 0 10px 0;
+  padding: 15px; */
+  /* background: rgba(255,255,255,0.5); */
+  margin-top: 10px;
+  height: 45px;
 }
 
 h5 {
@@ -33,7 +35,7 @@ h5 {
 } 
 
 #recipeSearch {
-  border-radius: 20px;
+  /* border-radius: 20px;
   border: 5px solid white; 
   -webkit-box-shadow: 
     inset 0 0 8px  rgb(48,191,215),
@@ -46,7 +48,7 @@ h5 {
           0 0 16px rgb(48,191,215); 
   padding: 10px;
   background: rgba(255,255,255,0.5);
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 0; */
 }
 
 tr {
@@ -68,7 +70,6 @@ th {
   padding: 20px;
   text-align: center;
   font-style: normal;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .errors {
@@ -86,20 +87,21 @@ th {
   width: 500px;
 }
 #findByIngrdients {
-  border-radius: 20px;
-  background-color: #34D0E7;
-  margin-left: 15px;
-  height: 65px;
+  /* border-radius: 20px; */
+  background-color: #FFEBED;
+  margin-left: 35px;
+  height: 30px;
+  width: 75px;
   /* border: 5px solid white;  */
-  -webkit-box-shadow: 
-  inset 0 0 8px  rgb(48,191,215),
-        0 0 16px rgb(48,191,215); 
+  /* -webkit-box-shadow: 
+  inset 0 0 8px  #FFE90B,
+        0 0 16px #FFE90B; 
 -moz-box-shadow: 
-  inset 0 0 8px  rgb(48,191,215),
-        0 0 16px rgb(48,191,215); 
+  inset 0 0 8px  #FFE90B,
+        0 0 16px #FFE90B; 
 box-shadow: 
-  inset 0 0 8px  rgb(48,191,215),
-        0 0 16px rgb(48,191,215); 
+  inset 0 0 8px  #FFE90B,
+        0 0 16px #FFE90B;  */
 }
 
 #fridgeOpen {
@@ -119,6 +121,40 @@ box-shadow:
 img {
   border-radius: 20px;
   border: solid gray 2px;
+}
+#recipeBorder {
+  border-radius: 20px;
+  border: 5px solid white; 
+  -webkit-box-shadow: 
+    inset 0 0 8px  #FFE90B,
+          0 0 16px #FFE90B; 
+  -moz-box-shadow: 
+    inset 0 0 8px  #FFE90B,
+          0 0 16px #FFE90B; 
+  box-shadow: 
+    inset 0 0 8px  #FFE90B,
+          0 0 16px #FFE90B; 
+  padding: 15px;
+  background: rgba(255,255,255,0.5);
+  margin: auto;
+  text-align: center;
+}
+#recipeSearchBorder {
+  border-radius: 20px;
+  border: 5px solid white; 
+  -webkit-box-shadow: 
+    inset 0 0 8px  #FFE90B,
+          0 0 16px #FFE90B; 
+  -moz-box-shadow: 
+    inset 0 0 8px  #FFE90B,
+          0 0 16px #FFE90B; 
+  box-shadow: 
+    inset 0 0 8px  #FFE90B,
+          0 0 16px #FFE90B; 
+  padding: 1px;
+  background: rgba(255,255,255,0.5);
+  margin: auto;
+  text-align: center;
 }
 
 
