@@ -127,4 +127,16 @@ img {
   margin: auto;
   text-align: center;
 }
+h1 {
+  font-family: 'Pacifico';
+  font-size: 70px;
+}
 
+h3 {
+  font-family: 'Pacifico';
+  color: pink;
+}
+h5 {
+  font-family: 'Pacifico';
+  color: pink; 
+}
