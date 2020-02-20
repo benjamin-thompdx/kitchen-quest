@@ -75,7 +75,6 @@ td {
   width: 500px;
 }
 #findByIngrdients {
-<<<<<<< HEAD
   background-color: #34D0E7;
 }
 
@@ -93,12 +92,9 @@ td {
   width: 50%;
 }
 
-.toggle {
-  
-=======
-  background-color: rgb(254,255,1);
+  /* background-color: rgb(254,255,1);
   width: 100px;
   height: 65px;
   margin-left: 15px
->>>>>>> master
-}
+
+} */
