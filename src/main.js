@@ -69,13 +69,13 @@ $(document).ready(function () {
             imageCell.innerHTML = `<img src=${value.image}></img>`;
             recipeCell.innerHTML = value.title;
             for( i = 0; i < value.usedIngredients.length; i++) {
-              ingredientsUsedCell.innerHTML += value.usedIngredients[i].name + ", ";
+              ingredientsUsedCell.innerHTML += "<li>" + value.usedIngredients[i].name + "</li>";
             }
             for( i = 0; i < value.unusedIngredients.length; i++) {
-              unusedIngredientsCell.innerHTML += value.unusedIngredients[i].name + ", ";
+              unusedIngredientsCell.innerHTML += "<li>" + value.unusedIngredients[i].name + "</li>";
             }
             for( i = 0; i < value.missedIngredients.length; i++) {
-              additionalIngredientsNeededCell.innerHTML += value.missedIngredients[i].name + ", ";
+              additionalIngredientsNeededCell.innerHTML += "<li>" + value.missedIngredients[i].name + "</li>";
             }
           });
         } else if (response.length === 0) {
