@@ -5,8 +5,8 @@
 #### By _**Team Kitchen Quest**_
 
 ## Description
-
-Users can enter the ingredients they have in their fridge and the application will provide a list of recipes that consist of the inputted ingredients, as well as a list of additional ingredients they will need to successfully create the suggested recipes. Users can search recipes to find cooking instructions. Lastly, users can click on fridge graphic for a cooking joke.
+ ###  MVP:
+Users can enter the ingredients they have in their fridge and the application will provide a list of recipes that consist of the inputted ingredients, as well as a list of additional ingredients they will need to successfully create the suggested recipes. Users can search recipes to find cooking instructions. Lastly, users can click on fridge graphic for a food related fact.
 
 ## Preview
 ![Landing Page Preview](img/kitchen-quest-fridge.png)
@@ -15,9 +15,9 @@ Users can enter the ingredients they have in their fridge and the application wi
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-|user inputs the ingredients they have and clicks submit to recieve recipe inspiration|apple, sugar, flour|apple fritter|
-|user inputs recipe name to recieve recipe instructions|apple fritter|Combine flour, sugar, salt, baking powder, cinnamon. Stir in milk and egg until just combined. Fold in apple...|
-|user clicks on fridge graphic to recieve a cooking joke|graphic click|any salad is a ceasar salad if you stab it enough|
+|User inputs the ingredients they have and clicks submit to recieve recipe inspiration|apple, sugar, flour|Apple fritter|
+|User inputs recipe name to recieve recipe instructions|apple fritter|Combine flour, sugar, salt, baking powder, cinnamon. Stir in milk and egg until just combined. Fold in apple...|
+|User clicks on fridge graphic to recieve a food related fact|graphic click|Cherries are in the rose family|
 
 ## Setup/Installation Requirements
 
@@ -30,6 +30,7 @@ _In Terminal:_
 * Open file in your preferred text editor
 * On Mac: ```open -a {your text editor} kitchen-quest```
 * On Windows: ```kitchen-quest```
+* run:  ```npm install```
 
 _Download Manually:_
 
@@ -67,7 +68,9 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * jQuery
 * Webpack
 * Node.js
-* spoonacular API
+* Spoonacular API
+* Google custom search engine
+* PixelArt
 
 ### License
 
