@@ -10,6 +10,7 @@ body {
 h3 {
   color: rgb(34, 34, 34);
 }
+
 #userInput {
   border: 1px solid black; 
   margin-top: 10px;
@@ -127,6 +128,7 @@ img {
   margin: auto;
   text-align: center;
 }
+
 h1 {
   font-family: 'Pacifico';
   font-size: 70px;
@@ -136,6 +138,7 @@ h3 {
   font-family: 'Pacifico';
   color: pink;
 }
+
 h5 {
   font-family: 'Pacifico';
   color: pink; 
