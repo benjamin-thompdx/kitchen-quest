@@ -6,8 +6,6 @@ import { KitchenService } from './../src/kitchen-service.js';
 import { FridgeService } from './../src/fridge-service.js';
 
 $(document).ready(function () {
-
-// kalepadot code below
   $(".toggle").click(function () {
      $("#fridgeClosed").toggle()
      $("#fridgeOpen").toggle();
@@ -21,18 +19,13 @@ $(document).ready(function () {
       const response = await fridgeService.getFridgeFact();
       getElements(response);
     })();
+
     function getElements(response) {
-      if (response) {
+      if(response) {
         $(".fridgeFact").text(`${response.text}`)
-        // $(".fridgeFact").text(`${JSON.stringify(response)}`)
-        // $(".fridgeFact").text(`${response}`)
       }
     }
   });
-// JSON.stringify(response)
-
-// kalepadot code above
-
   $("#findByIngrdients").click(function () {
     event.preventDefault();
     $("#ingredientsOutput").show();
@@ -46,8 +39,8 @@ $(document).ready(function () {
     })();
     
     function getElements(response) {
-      if (response) {
-        if (response.length > 0) {
+      if(response) {
+        if(response.length > 0) {
           let table = document.getElementById("ingredientsOutput");
           $(".noResult").empty();
           
