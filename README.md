@@ -8,8 +8,8 @@
  ###  MVP:
 Users can enter the ingredients they have in their fridge and the application will provide a list of recipes that consist of the inputted ingredients, as well as a list of additional ingredients they will need to successfully create the suggested recipes. Users can search recipes to find cooking instructions. Lastly, users can click on fridge graphic for a food related fact.
 
-## Preview
-![Landing Page Preview](img/kitchen-quest-fridge.png)
+
+![Landing Page Preview](https://art.pixilart.com/5f4eee38f785edc.gif)
 
 ## Project Specifications
 
